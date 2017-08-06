@@ -11,6 +11,9 @@ You can find some extremely cheap on AliExpress if you don't mind waiting.
 ![](lm75a-pinout.png)
 
 ## Connection to the Raspberry Pi
+You first need to open you I2C bus, follow the steps here: 
+https://www.youtube.com/watch?v=v4rfy9od5Lo
+
 ![](lm75a-connection-to-pi.png)
 
 ## Temperature Read out code
