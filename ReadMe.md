@@ -1,6 +1,7 @@
 # LM75A
 LM75A is a cheap temperature sensor that uses the I2C bus on your raspberry pi to read the current temperature. 
-If yours come with the board as shown in photo below, you can hook it up to you pi. 
+If yours came with the board as shown in photo below, you can hook it up to you pi. 
+
 
 ![](lm75a.jpg)
 
