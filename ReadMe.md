@@ -18,6 +18,7 @@ https://www.youtube.com/watch?v=v4rfy9od5Lo
 ![](lm75a/lm75a-connection-to-pi.png)
 
 ## Temperature Read out code
+Synchronously 
 ```javascript
 const I2C = require('raspi-i2c').I2C;
 
@@ -43,4 +44,19 @@ const readTemperature = (unit) => {
 
 readTemperature();
 
+```
+
+Asynchronously 
+```javascript
+const I2C = require('raspi-i2c').I2C;
+const readTemperature = i2c.readByte(0x48, (e, temp) => {
+    const i2c = new I2C();
+    
+    if (e) {
+        console.log('error reading the temp');
+    }
+    return temp;
+});
+
+readTemperature();
 ```
